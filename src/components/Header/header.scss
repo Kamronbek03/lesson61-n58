@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 19px 146px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .others {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    * {
+      cursor: pointer;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      a {
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 500;
+        color: #22343d;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+      .a1 {
+        font-weight: 600;
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      button {
+        padding: 10px 25px;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 600;
+        border-radius: 4px;
+      }
+      .btn1 {
+        border: 1px solid #bcd0e5;
+        color: #173a56;
+        background-color: inherit;
+      }
+      .btn2 {
+        color: #fff;
+        background-color: #02897a;
+        border: none;
+      }
+    }
+  }
+}
+.head {
+  margin: 0 auto;
+  background: #ededed;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 4px 0 #ccc;
+}

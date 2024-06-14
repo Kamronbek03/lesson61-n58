@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Inter;
+  src: url(../../assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: InterBold;
+  src: url(../../assets/fonts/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+.section4 {
+  padding-top: 117px;
+  .container {
+    display: block;
+    h2 {
+      font-size: 34px;
+      font-family: PoppinsBold;
+      font-weight: 700;
+      color: #22343d;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #22343d;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        text-align: center;
+        padding: 24px 75px 32px;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px 0px #00000040;
+        h3 {
+          font-size: 24px;
+          font-weight: 700;
+          font-family: PoppinsBold;
+          text-align: center;
+          color: #22343d;
+          margin-bottom: 8px;
+        }
+        p {
+          text-align: center;
+          font-size: 16px;
+          color: #22343d;
+          margin-bottom: 16px;
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          margin-bottom: 40px;
+          h4 {
+            font-family: PoppinsBold;
+            font-size: 76px;
+            font-weight: 700;
+            line-height: 100px;
+            letter-spacing: 0.2px;
+            color: #02897a;
+          }
+          .usd {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            h5 {
+              font-family: Inter;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 30px;
+              color: #02897a;
+              text-align: left;
+            }
+            pre {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19px;
+              color: #afafaf;
+            }
+          }
+        }
+        .text_p {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 16px;
+          margin-bottom: 38px;
+          p {
+            font-family: InterBold;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 22px;
+            color: #22343d;
+          }
+        }
+        button {
+          padding: 11px 19px;
+          border-radius: 8px;
+          border: none;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 600;
+          color: #fff;
+          background-color: #02897a;
+        }
+        transition: 0.4s ease-in-out;
+        &:hover {
+          h3,
+          p {
+            color: #fff;
+          }
+          .price .usd pre {
+            color: #e0e0e0;
+          }
+          .price h4,
+          .price .usd h5 {
+            color: #fff;
+          }
+          button {
+            background-color: #fff;
+            color: #02897a;
+          }
+          background-color: #02897a;
+        }
+      }
+    }
+  }
+}
